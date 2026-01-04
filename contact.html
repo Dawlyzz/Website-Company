@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">MyCompany</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html" id="adminLink" style="display:none;">
+  Admin
+</a>
+
+    <!-- Dark Mode -->
+    <span id="themeToggle" class="toggle">🌓</span>
+
+<!-- Login Button -->
+<button id="loginBtn"
+  class="auth-btn"
+  onclick="window.location.href='login.html'">
+  Login <span>→</span>
+</button>
+
+<!-- Logout Button -->
+<button id="logoutBtn"
+  class="auth-btn logout"
+  onclick="logout()"
+  style="display:none;">
+  Logout <span>↗</span>
+</button>
+
+
+    <button id="logoutBtn" class="btn"
+      onclick="logout()" style="display:none;">
+      Logout
+    </button>
+  </nav>
+</header>
+
+
+<section class="fade">
+  <h1>Contact Us</h1>
+  <p>Let’s talk about your next project.</p>
+
+  <form class="slide-left">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>© 2026 MyCompany</footer>
+<!-- Firebase core -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<!-- Firebase init -->
+<script src="js/firebase.js"></script>
+
+<!-- Auth logic -->
+<script src="js/auth.js"></script>
+
+<!-- Main logic (Dark mode, animations, services posts) -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

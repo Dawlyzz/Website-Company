@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">MyCompany</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html" id="adminLink" style="display:none;">
+  Admin
+</a>
+
+    <!-- Dark Mode -->
+    <span id="themeToggle" class="toggle">🌓</span>
+
+    <!-- Login Button -->
+    <button id="loginBtn" class="auth-btn" onclick="window.location.href='login.html'">
+      Login <span>→</span>
+    </button>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn" class="auth-btn logout" onclick="logout()" style="display:none;">
+      Logout <span>↗</span>
+    </button>
+  </nav>
+</header>
+
+<!-- About Section -->
+<section class="about-section fade">
+  <h1>About Our Company</h1>
+  <p>
+    We are a professional web development company focused on delivering clean, modern, and high-quality digital solutions.
+  </p>
+</section>
+
+<!-- Mission and Vision Section -->
+<section class="grid">
+  <div class="card slide-left">
+    <h3>Our Mission</h3>
+    <p>To help businesses grow with powerful and modern websites.</p>
+  </div>
+
+  <div class="card slide-right">
+    <h3>Our Vision</h3>
+    <p>To become a trusted partner for businesses worldwide.</p>
+  </div>
+</section>
+
+<footer>© 2026 MyCompany</footer>
+
+<!-- Firebase Scripts -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage-compat.js"></script>
+
+<!-- Firebase Init -->
+<script src="js/firebase.js"></script>
+
+<!-- Auth Logic -->
+<script src="js/auth.js"></script>
+
+<!-- Main Logic -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

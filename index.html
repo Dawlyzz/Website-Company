@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCompany</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">MyCompany</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html" id="adminLink" style="display:none;">
+  Admin
+</a>
+
+    <!-- Dark Mode -->
+    <span id="themeToggle" class="toggle">🌓</span>
+
+  <!-- Login Button -->
+<button id="loginBtn"
+  class="auth-btn"
+  onclick="window.location.href='login.html'">
+  Login <span>→</span>
+</button>
+
+<!-- Logout Button -->
+<button id="logoutBtn"
+  class="auth-btn logout"
+  onclick="logout()"
+  style="display:none;">
+  Logout <span>↗</span>
+</button>
+
+    <button id="logoutBtn" class="btn"
+      onclick="logout()" style="display:none;">
+      Logout
+    </button>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero fade">
+  <div>
+    <h1>Modern Websites for Growing Businesses</h1>
+    <p>
+      We design and develop clean, fast, and professional websites
+      that help businesses grow online.
+    </p>
+    <a href="contact.html" class="btn">Get Started</a>
+  </div>
+
+  <div class="card">
+    <h3>Why Choose Us?</h3>
+    <p>
+      ✔ Clean & Modern Design<br>
+      ✔ Responsive on All Devices<br>
+      ✔ Fast Performance<br>
+      ✔ Professional Support
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="fade">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Website Development</h3>
+      <p>Professional business websites built with clean code.</p>
+    </div>
+    <div class="card">
+      <h3>UI Implementation</h3>
+      <p>Pixel-perfect implementation from modern designs.</p>
+    </div>
+    <div class="card">
+      <h3>Custom Solutions</h3>
+      <p>Tailored websites that match your business needs.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 MyCompany. All rights reserved.
+</footer>
+
+<!-- Firebase core -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<!-- Firebase init -->
+<script src="js/firebase.js"></script>
+
+<!-- Auth logic -->
+<script src="js/auth.js"></script>
+
+<!-- Main logic (Dark mode, animations, services posts) -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
